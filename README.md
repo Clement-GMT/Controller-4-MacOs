@@ -12,7 +12,7 @@ Les Joy-Con 2 peuvent être utilisés seuls ou réunis en une manette. L’app a
 
 ## Installation
 
-- Le DMG fourni cible les Mac Apple Silicon sous macOS 15 ou ultérieur.
+- [Télécharge le DMG dans la dernière release](https://github.com/Clement-GMT/Controller-4-MacOs/releases/latest). Il cible les Mac Apple Silicon sous macOS 15 ou ultérieur.
 - Glisse **Controller 4 MacOs** dans **Applications**.
 - Installe [OpenJoystickDriver 0.6.0-alpha.2](https://github.com/xsyetopz/OpenJoystickDriver/releases/tag/0.6.0-alpha.2) dans **Applications**. Ouvre-le et accorde les autorisations de surveillance de l’entrée, d’accessibilité et de Bluetooth quand macOS les demande.
 - Le DMG fourni contient une application signée ad hoc. Pour une application téléchargée et bloquée par Gatekeeper, macOS permet une ouverture ponctuelle depuis **Réglages Système → Confidentialité et sécurité**. [Guide Apple](https://support.apple.com/fr-fr/guide/mac-help/mh40616/mac)
@@ -30,11 +30,11 @@ Le jeu doit prendre en charge les manettes. Si une app ouvre une manette uniquem
 
 Utilise Xcode ou les outils Xcode en ligne de commande, puis exécute les commandes suivantes à la racine du projet.
 
-    ./scripts/build.sh
+    bash scripts/build.sh
 
 Le script crée le DMG dans le dossier dist. Pour signer avec une identité Developer ID Application du trousseau, exécute la commande suivante.
 
-    XBOX_BRIDGE_SIGN_IDENTITY='Developer ID Application: Votre nom (TEAMID)' ./scripts/build.sh
+    XBOX_BRIDGE_SIGN_IDENTITY='Developer ID Application: Votre nom (TEAMID)' bash scripts/build.sh
 
 Pour une release GitHub avec notarisation, soumets le DMG à Apple via xcrun notarytool, agrafe le ticket avec xcrun stapler et joins le fichier à la release GitHub. [Notarisation Apple](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution) · [Releases GitHub](https://docs.github.com/fr/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 
