@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleDisplayName</key><string>Controller 4 MacOs</string>
+    <key>CFBundleExecutable</key><string>PontManettes</string>
+    <key>CFBundleIconFile</key><string>AppIcon.icns</string>
+    <key>CFBundleIdentifier</key><string>io.github.controller4macos.app</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>Controller 4 MacOs</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>2.0.0</string>
+    <key>CFBundleVersion</key><string>2</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>CFBundleDevelopmentRegion</key><string>fr</string>
+    <key>LSMinimumSystemVersion</key><string>15.0</string>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+</dict></plist>
